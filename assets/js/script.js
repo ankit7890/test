@@ -1,4 +1,4 @@
-const port = 8080;
+const port = process.env.PORT || 8080;
 const path = require("path");
 const express = require("express");
 const app = express();
@@ -42,7 +42,7 @@ app.get("/",(req,res)=>{
 });
 app.get("/element",(req,res)=>{
 
-    
+
 })
 
 app.get("/",(req,res)=>{
